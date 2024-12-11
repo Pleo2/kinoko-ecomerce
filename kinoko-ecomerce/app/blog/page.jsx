@@ -157,7 +157,7 @@ export default function BlogPage() {
 						<CardFooter>
 							<Link
 								href={`/blog/${post.slug}`}
-								className="text-blue-600 hover:underline"
+								className="text-buttonColor hover:underline"
 							>
 								Read more
 							</Link>

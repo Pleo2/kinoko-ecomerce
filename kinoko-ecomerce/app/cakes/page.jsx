@@ -30,7 +30,7 @@ export default function CakesPage() {
             </CardContent>
             <CardFooter>
               <Link href={`/cakes/${cake.id}`}>
-                <Button>View Details</Button>
+                <Button className="bg-buttonColor">View Details</Button>
               </Link>
             </CardFooter>
           </Card>

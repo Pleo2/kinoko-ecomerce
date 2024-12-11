@@ -67,7 +67,7 @@ export default function CartPage() {
 						<p className="text-xl font-bold">Total: ${total.toFixed(2)}</p>
 						<div className="mt-4 space-x-4">
 							<Button
-								className="bg-[#cdbecf] text-gray-800 hover:bg-[#bfadc1]"
+								className="bg-purple text-gray-800 hover:bg-[#bfadc1]"
 								onClick={() => alert("Checkout functionality not implemented")}
 							>
 								Checkout

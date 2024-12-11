@@ -225,7 +225,7 @@ export default function CakeDetailPage() {
 				</div>
 				<Button
 					onClick={handleAddToCart}
-					className="bg-[#cdbecf] text-gray-800 hover:bg-[#bfadc1]"
+					className="bg-purple text-gray-800 hover:bg-[#bfadc1]"
 				>
 					Add to Cart
 				</Button>

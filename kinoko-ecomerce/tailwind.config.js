@@ -11,12 +11,16 @@ module.exports = {
 	],
 	theme: {
 		extend: {
+			fontFamily: {},
+
 			borderRadius: {
 				lg: "var(--radius)",
 				md: "calc(var(--radius) - 2px)",
 				sm: "calc(var(--radius) - 4px)",
 			},
 			colors: {
+				buttonColor: "var(--button-color)",
+				purple: "var(--purple)",
 				background: "hsl(var(--background))",
 				foreground: "hsl(var(--foreground))",
 				card: {
@@ -41,7 +45,7 @@ module.exports = {
 				},
 				accent: {
 					DEFAULT: "hsl(var(--accent))",
-					foreground: "hsl(var(--accent-foreground))",
+					foreground: "var(--accent-foreground)",
 				},
 				destructive: {
 					DEFAULT: "hsl(var(--destructive))",

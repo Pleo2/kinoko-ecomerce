@@ -27,22 +27,40 @@ const featuredCakes = [
 		price: 30.99,
 		image: "/placeholder.svg",
 	},
+		{
+		id: 3,
+		name: "Vanilla Bliss",
+		price: 30.99,
+		image: "/placeholder.svg",
+	},
+			{
+		id: 3,
+		name: "Vanilla Bliss",
+		price: 30.99,
+		image: "/placeholder.svg",
+	},
+				{
+		id: 3,
+		name: "Vanilla Bliss",
+		price: 30.99,
+		image: "/placeholder.svg",
+	},
 ];
 
 export default function Home() {
 	return (
 		<div>
-			<div className="bg-[#cdbecf] py-16 px-4 mb-8 rounded-lg shadow-md">
-				<h1 className="text-4xl font-bold text-center text-gray-800 mb-4">
-					Welcome to Sweet Delights Bakery
+			<div className=" border-2 border-purple py-16 px-4 mb-8 rounded-lg shadow-md">
+				<h1 className="text-6xl font-black text-center text-black mb-4">
+					Bienvenido a Kinoko
 				</h1>
-				<p className="text-center text-gray-700 mb-8">
-					Discover our delicious cakes for every occasion
+				<p className="text-center text-accent-foreground mb-8">
+					Una pasteleria 100% venezolana ubicada en valencia
 				</p>
 				<div className="text-center">
 					<Link href="/cakes">
-						<Button className="bg-white text-gray-800 hover:bg-gray-100">
-							View All Cakes
+						<Button className="bg-purple text-gray-800 hover:bg-gray-100">
+							Comprar torticas
 						</Button>
 					</Link>
 				</div>
@@ -63,7 +81,7 @@ export default function Home() {
 						</CardContent>
 						<CardFooter>
 							<Link href={`/cakes/${cake.id}`}>
-								<Button className="bg-[#cdbecf] text-gray-800 hover:bg-[#bfadc1]">
+								<Button className="bg-purple text-gray-800 hover:bg-buttonColor">
 									View Details
 								</Button>
 							</Link>
