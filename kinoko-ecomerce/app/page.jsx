@@ -13,37 +13,55 @@ const featuredCakes = [
 		id: 1,
 		name: "Chocolate Dream",
 		price: 35.99,
-		image: "/placeholder.svg",
+		image: "/images/20240513_182430.webp",
 	},
 	{
 		id: 2,
 		name: "Strawberry Delight",
 		price: 32.99,
-		image: "/placeholder.svg",
+		image: "/images/20240516_091853.webp",
 	},
 	{
 		id: 3,
 		name: "Vanilla Bliss",
 		price: 30.99,
-		image: "/placeholder.svg",
+		image: "/images/20240523_153232.webp",
 	},
-		{
-		id: 3,
+	{
+		id: 4,
 		name: "Vanilla Bliss",
 		price: 30.99,
-		image: "/placeholder.svg",
+		image: "/images/1000307419.webp",
 	},
-			{
-		id: 3,
+	{
+		id: 5,
 		name: "Vanilla Bliss",
 		price: 30.99,
-		image: "/placeholder.svg",
+		image: "/images/1000904494.webp",
 	},
-				{
-		id: 3,
+	{
+		id: 6,
 		name: "Vanilla Bliss",
 		price: 30.99,
-		image: "/placeholder.svg",
+		image: "/images/IMG_0972.webp",
+	},
+	{
+		id: 7,
+		name: "Vanilla Bliss",
+		price: 30.99,
+		image: "/images/IMG_1213.webp",
+	},
+	{
+		id: 8,
+		name: "Vanilla Bliss",
+		price: 30.99,
+		image: "/images/IMG_1218_jpg-2.webp",
+	},
+	{
+		id: 9,
+		name: "Vanilla Bliss",
+		price: 30.99,
+		image: "/images/IMG_1293.webp",
 	},
 ];
 
