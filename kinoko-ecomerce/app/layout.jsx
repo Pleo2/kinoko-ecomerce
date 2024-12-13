@@ -39,8 +39,8 @@ const SnPro = localFont({
 
 
 export const metadata = {
-	title: "KinokoCakes.ve",
-	description: "Pasteleria venezolana ubicada en valencia estado carabobo",
+    title: "KinokoCakes.ve",
+    description: "Pasteleria venezolana ubicada en valencia estado carabobo"
 };
 
 export default function RootLayout({ children }) {

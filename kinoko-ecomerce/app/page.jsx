@@ -11,19 +11,19 @@ import {
 const featuredCakes = [
 	{
 		id: 1,
-		name: "Chocolate Dream",
+		name: "Tortita personalizada con diseño artistico hecho a mano",
 		price: 35.99,
 		image: "/images/20240513_182430.webp",
 	},
 	{
 		id: 2,
-		name: "Strawberry Delight",
+		name: "Tortita de Corazon 'vintage cake'",
 		price: 32.99,
 		image: "/images/20240516_091853.webp",
 	},
 	{
 		id: 3,
-		name: "Vanilla Bliss",
+		name: "Mini box",
 		price: 30.99,
 		image: "/images/20240523_153232.webp",
 	},
