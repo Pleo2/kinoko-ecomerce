@@ -7,84 +7,21 @@ import {
 	CardHeader,
 	CardTitle,
 } from "@/components/ui/card";
-
-const featuredCakes = [
-	{
-		id: 1,
-		name: "Tortita personalizada con diseño artistico hecho a mano",
-		price: 35.99,
-		image: "/images/20240513_182430.webp",
-	},
-	{
-		id: 2,
-		name: "Tortita de Corazon 'vintage cake'",
-		price: 32.99,
-		image: "/images/20240516_091853.webp",
-	},
-	{
-		id: 3,
-		name: "Mini box",
-		price: 30.99,
-		image: "/images/20240523_153232.webp",
-	},
-	{
-		id: 4,
-		name: "Vanilla Bliss",
-		price: 30.99,
-		image: "/images/1000307419.webp",
-	},
-	{
-		id: 5,
-		name: "Vanilla Bliss",
-		price: 30.99,
-		image: "/images/1000904494.webp",
-	},
-	{
-		id: 6,
-		name: "Vanilla Bliss",
-		price: 30.99,
-		image: "/images/IMG_0972.webp",
-	},
-	{
-		id: 7,
-		name: "Vanilla Bliss",
-		price: 30.99,
-		image: "/images/IMG_1213.webp",
-	},
-	{
-		id: 8,
-		name: "Vanilla Bliss",
-		price: 30.99,
-		image: "/images/IMG_1218_jpg-2.webp",
-	},
-	{
-		id: 9,
-		name: "Vanilla Bliss",
-		price: 30.99,
-		image: "/images/IMG_1293.webp",
-	},
-];
+import { cakes } from "./mocks-cakes";
+import WelcomeSection from "@/components/homeSections/welcomeSection";
+import MemeCakesSection from "@/components/homeSections/memeCakesSection";
+import VintageCakesSection from "@/components/homeSections/vintageCakesSection";
+import ManoAlzadaSection from "@/components/homeSections/manoAlzadaSection";
 
 export default function Home() {
 	return (
 		<div>
-			<div className=" border-2 border-purple py-16 px-4 mb-8 rounded-lg shadow-md">
-				<h1 className="text-6xl font-black text-center text-black mb-4">
-					Bienvenido a Kinoko
-				</h1>
-				<p className="text-center text-accent-foreground mb-8">
-					Una pasteleria 100% venezolana ubicada en valencia
-				</p>
-				<div className="text-center">
-					<Link href="/cakes">
-						<Button className="bg-purple text-gray-800 hover:bg-gray-100">
-							Comprar torticas
-						</Button>
-					</Link>
-				</div>
-			</div>
-			<div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-				{featuredCakes.map((cake) => (
+			<WelcomeSection/>
+			<MemeCakesSection/>
+			<VintageCakesSection/>
+			<ManoAlzadaSection/>
+			<div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+				{cakes.map((cake) => (
 					<Card key={cake.id} className="border-[#cdbecf] border-2">
 						<CardHeader>
 							<CardTitle>{cake.name}</CardTitle>
@@ -93,14 +30,15 @@ export default function Home() {
 							<img
 								src={cake.image}
 								alt={cake.name}
-								className="w-full h-48 object-cover rounded-md"
+								className="object-center object-fill rounded-md"
 							/>
-							<p className="mt-2 text-xl font-bold">${cake.price.toFixed(2)}</p>
+							<p className="bg-buttonColor w-max px-2 py-1 rounded-full text-xs text-background mt-2">{cake.description}</p>
+							<p className="mt-2 text-4xl font-bold text-foreground">$ {cake.basePrice.toFixed(2)}</p>
 						</CardContent>
 						<CardFooter>
 							<Link href={`/cakes/${cake.id}`}>
 								<Button className="bg-purple text-gray-800 hover:bg-buttonColor">
-									View Details
+									Comprar Tortita
 								</Button>
 							</Link>
 						</CardFooter>
