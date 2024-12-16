@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { useParams } from "next/navigation";
 import { Button } from "@/components/ui/button";
-import { useCart } from "../../sections/cart-provider";
+import { useCart } from "../../layout/cart-provider";
 import {
 	Select,
 	SelectContent,

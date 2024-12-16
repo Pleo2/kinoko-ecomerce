@@ -16,7 +16,7 @@ export default function Header() {
     (
     <header className="bg-white shadow-md shadow-purple m-auto h-32 flex items-center">
       <div className="container mx-auto px-4 py-6 flex justify-between items-center ">
-        <Link href="/" className={`text-2xl font-sans font-bold`}>
+        <Link href="/" className={"text-2xl font-sans font-bold"}>
             <Image
               src={'/kinokoLogo.svg'}
               width={159}

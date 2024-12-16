@@ -4,19 +4,27 @@ import Link from "next/link";
 
 export default function WelcomeSection () {
     return (
-        <div className="border-2 border-purple pb-4 pt-4 px-4 mb-8 rounded-lg shadow-md">
+        <div className="border-2 border-purple pb-4 pt-4 px-4 mb-16 rounded-lg shadow-md">
             <div className="flex flex-col">
-                <img
-                    src={'/placeholder.svg'}
-                    alt={'Pictures, placeHolder'}
-                    className="object-center object-cover rounded-md w-full h-96 mb-1"
-                />
-                <h1 className="text-6xl font-black text-center text-black mb-2">
+                <div className="flex gap-1 mb-4 ">
+                    <img
+                        src={'/placeholder.svg'}
+                        alt={'Pictures, placeHolder'}
+                        className="object-center object-cover rounded-md w-full h-80 mb-1"
+                    />
+                    <img
+                        src={'/placeholder.svg'}
+                        alt={'Pictures, placeHolder'}
+                        className="object-center object-cover rounded-md w-full h-80 mb-1"
+                    />
+                </div>
+                
+                <h1 className="text-8xl font-black text-center text-black mb-2">
                     Bienvenido a Kinoko
                 </h1>
             </div>
 
-            <p className="text-center text-accent-foreground mb-4">
+            <p className="text-center m-auto text-accent-foreground mb-4">
                 Una pasteleria 100% venezolana ubicada en valencia
             </p>
 
@@ -26,7 +34,7 @@ export default function WelcomeSection () {
                     {`Desde 9:00 am hasta
 						2:00 pm`}
                 </div>
-                <p className="text-center text-red-400 border border-1 border-red-400 rounded-full px-2 py-1">Para el mismo dia</p>
+                {/* <p className="text-center text-red-400 border border-1 border-red-400 rounded-full px-2 py-1">Para el mismo dia</p> */}
             </div>
 
             <div className="text-center">
