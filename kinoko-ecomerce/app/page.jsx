@@ -17,10 +17,10 @@ export default function Home() {
 	return (
 		<div>
 			<WelcomeSection/>
+			<ManoAlzadaSection/>
 			<MemeCakesSection/>
 			<VintageCakesSection/>
-			<ManoAlzadaSection/>
-			<div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+			{/* <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
 				{cakes.map((cake) => (
 					<Card key={cake.id} className="border-[#cdbecf] border-2">
 						<CardHeader>
@@ -44,7 +44,7 @@ export default function Home() {
 						</CardFooter>
 					</Card>
 				))}
-			</div>
+			</div> */}
 		</div>
 	);
 }
